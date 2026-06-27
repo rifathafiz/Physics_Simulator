@@ -1,6 +1,7 @@
 package com.physicssim.navigation;
 
 import com.physicssim.features.kinematics.KinematicsView;
+import com.physicssim.features.atomic_nuclear.AtomicNuclearView;
 import com.physicssim.views.AboutView;
 import com.physicssim.views.HelpView;
 import com.physicssim.views.HomeView;
@@ -44,6 +45,7 @@ public class NavigationController {
             case HOME -> new HomeView();
             case SIMULATIONS -> new SimulationsView();
             case KINEMATICS -> new KinematicsView();
+            case ATOMIC_NUCLEAR -> new AtomicNuclearView();
             case ABOUT -> new AboutView();
             case HELP -> new HelpView();
         };

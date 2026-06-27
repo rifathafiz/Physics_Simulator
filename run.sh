@@ -13,6 +13,7 @@ javac \
     src/com/physicssim/components/*.java \
     src/com/physicssim/model/*.java \
     src/com/physicssim/model/electricity/*.java \
+    src/com/physicssim/model/atomic_nuclear/*.java \
     src/com/physicssim/theme/*.java \
     src/com/physicssim/views/*.java \
     src/com/physicssim/navigation/*.java \
@@ -20,7 +21,8 @@ javac \
     src/com/physicssim/features/mechanics/*.java \
     src/com/physicssim/features/simulations/*.java \
     src/com/physicssim/features/electricity/*.java \
-    src/com/physicssim/features/kinematics/*.java
+    src/com/physicssim/features/kinematics/*.java \
+    src/com/physicssim/features/atomic_nuclear/*.java
 
 # Copy resources
 cp -R src/resources/* bin/

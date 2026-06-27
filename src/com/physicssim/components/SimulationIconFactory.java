@@ -22,6 +22,7 @@ public final class SimulationIconFactory {
             case ORBIT -> createOrbitIcon();
             case ANALYTICS -> createChartIcon();
             case ELECTRICITY -> createElectricityIcon();
+            case ATOMIC_NUCLEAR -> createAtomicNuclearIcon();
             default -> createPendulumIcon();
         };
     }
@@ -188,5 +189,35 @@ public final class SimulationIconFactory {
         ground.setStrokeWidth(3);
 
         return new StackPane(new Group(ground, ball, velocityLine, velocityArrow1, velocityArrow2, accelLine, accelArrow1, accelArrow2));
+    }
+
+    private static StackPane createAtomicNuclearIcon() {
+        // Atomic nucleus
+        Circle nucleus = new Circle(60, 48, 12, Color.web("#dc2626"));
+
+        // 3 electron orbits
+        Arc orbit1 = new Arc(60, 48, 30, 30, 0, 360);
+        orbit1.setFill(Color.TRANSPARENT);
+        orbit1.setStroke(Color.web("#2b3440"));
+        orbit1.setStrokeWidth(3);
+
+        Arc orbit2 = new Arc(60, 48, 30, 30, 0, 360);
+        orbit2.setFill(Color.TRANSPARENT);
+        orbit2.setStroke(Color.web("#2b3440"));
+        orbit2.setStrokeWidth(3);
+        orbit2.setRotate(60);
+
+        Arc orbit3 = new Arc(60, 48, 30, 30, 0, 360);
+        orbit3.setFill(Color.TRANSPARENT);
+        orbit3.setStroke(Color.web("#2b3440"));
+        orbit3.setStrokeWidth(3);
+        orbit3.setRotate(120);
+
+        // Electrons
+        Circle electron1 = new Circle(90, 48, 5, Color.web("#3b82f6"));
+        Circle electron2 = new Circle(60, 18, 5, Color.web("#3b82f6"));
+        Circle electron3 = new Circle(30, 48, 5, Color.web("#3b82f6"));
+
+        return new StackPane(new Group(orbit1, orbit2, orbit3, nucleus, electron1, electron2, electron3));
     }
 }

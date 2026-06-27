@@ -14,6 +14,7 @@ public final class SimulationCatalog {
                 new SimulationItem("(3)", "Kinematics", SimulationType.KINEMATICS),
                 new SimulationItem("(4)", "Orbital Gravity", SimulationType.ORBIT),
                 new SimulationItem("(5)", "Data Analysis", SimulationType.ANALYTICS),
-                new SimulationItem("(6)", "Electricity\nCurrent electricity", SimulationType.ELECTRICITY));
+                new SimulationItem("(6)", "Electricity\nCurrent electricity", SimulationType.ELECTRICITY),
+                new SimulationItem("(7)", "Atomic &\nNuclear Physics", SimulationType.ATOMIC_NUCLEAR));
     }
 }
